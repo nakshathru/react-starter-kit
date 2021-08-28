@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import {
   AppBar, Toolbar, IconButton, Typography, Badge,
-  CssBaseline, Drawer, Divider, List, Container, Grid,
-  Paper, InputBase,
+  CssBaseline, Drawer, Divider, List, InputBase,
 } from '@material-ui/core';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -15,7 +14,6 @@ import DrawerList from '../DrawerList';
 const Header = () => {
   const styles = useStyles();
   const [open, setOpen] = useState(true);
-  const fixedHeightPaper = clsx(styles.paper, styles.fixedHeight);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -72,22 +70,6 @@ const Header = () => {
           {DrawerList}
         </List>
       </Drawer>
-      <main className={styles.content}>
-        <div className={styles.appBarSpacer} />
-        <Container maxWidth="lg" className={styles.container}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper} />
-            </Grid>
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper} />
-            </Grid>
-            <Grid item xs={12}>
-              <Paper className={styles.paper} />
-            </Grid>
-          </Grid>
-        </Container>
-      </main>
     </>
 
   );

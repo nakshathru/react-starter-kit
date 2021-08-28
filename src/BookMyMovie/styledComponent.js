@@ -1,6 +1,19 @@
 import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core/styles';
 
-// eslint-disable-next-line import/prefer-default-export
 export const BookMyMovieWrapper = styled.div`
 display: flex;
 `;
+
+export const useStyles = makeStyles((theme) => ({
+  appBarSpacer: theme.mixins.toolbar,
+  content: {
+    flexGrow: 1,
+    height: '100vh',
+    overflow: 'auto',
+  },
+  container: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+  },
+}));

@@ -1,9 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-  },
   toolbar: {
     paddingRight: 24,
   },
@@ -57,16 +54,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: theme.spacing(9),
     },
-  },
-  appBarSpacer: theme.mixins.toolbar,
-  content: {
-    flexGrow: 1,
-    height: '100vh',
-    overflow: 'auto',
-  },
-  container: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
   },
   paper: {
     padding: theme.spacing(2),
