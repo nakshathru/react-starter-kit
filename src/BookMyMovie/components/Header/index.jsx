@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <CssBaseline />
-      <AppBar position="fixed" className={clsx(styles.appBar, open && styles.appBarShift)}>
+      <AppBar position="fixed" color="secondary" className={clsx(styles.appBar, open && styles.appBarShift)}>
         <Toolbar className={styles.toolbar}>
           <IconButton
             edge="start"
