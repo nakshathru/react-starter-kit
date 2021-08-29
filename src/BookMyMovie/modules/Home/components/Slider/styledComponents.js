@@ -17,30 +17,32 @@ export const useStyles = makeStyles(() => ({
     height: '100%',
     position: 'relative',
     width: '100%',
+    marginLeft: 'auto',
+    backgroundColor: 'linear-gradient(to right, #030B17, rgba(0,0,0,0))',
   },
   mediaContent: {
+    padding: 30,
+  },
+  overlay: {
     position: 'absolute',
-    bottom: 0,
-    padding: 15,
-    backgroundColor: 'black',
-    color: 'white',
-    opacity: 0.6,
-    width: '100%',
-    height: '30%',
-    fontWeight: 200,
-    transition: 300,
-    cursor: 'pointer',
-    '&:hover': {
-      opacity: 0.8,
-    },
+    top: 0,
+    background: 'linear-gradient(to right, #030B17, rgba(0,0,0,0))',
+    transition: 'background 0.3s ease-in',
+    height: '100%',
+    width: 200,
   },
   mediaTitle: {
     fontWeight: 'bold',
     fontSize: 25,
-    marginBottom: 2,
+    marginBottom: 10,
+    color: 'white',
   },
   mediaCaption: {
-
+    color: 'white',
+    fontSize: 14,
+  },
+  bannerContent: {
+    backgroundColor: '#030B17',
   },
 }));
 

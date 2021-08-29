@@ -14,11 +14,7 @@ const Slider = () => {
         <CarouselItem key={uuidv4()}>
           <Card raised className={styles.banner}>
             <Grid container spacing={0} className={styles.bannerGrid}>
-              <CardMedia
-                className={styles.cardMedia}
-                image={item.image}
-                title={item.name}
-              >
+              <Grid item xs={4} className={styles.bannerContent}>
                 <MediaContent className={styles.mediaContent}>
                   <Typography className={styles.mediaTitle}>
                     {item.name}
@@ -27,7 +23,24 @@ const Slider = () => {
                     {item.caption}
                   </Typography>
                 </MediaContent>
-              </CardMedia>
+
+              </Grid>
+              <Grid item xs={8}>
+                <CardMedia
+                  className={styles.cardMedia}
+                  image={item.image}
+                  title={item.name}
+                />
+                <MediaContent className={styles.overlay} />
+              </Grid>
+              {/* <MediaContent className={styles.mediaContent}>
+                <Typography className={styles.mediaTitle}>
+                  {item.name}
+                </Typography>
+                <Typography className={styles.mediaCaption}>
+                  {item.caption}
+                </Typography>
+              </MediaContent> */}
             </Grid>
           </Card>
         </CarouselItem>
