@@ -13,7 +13,7 @@ import DrawerList from '../DrawerList';
 
 const Header = () => {
   const styles = useStyles();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handleDrawerOpen = () => {
     setOpen(true);
   };

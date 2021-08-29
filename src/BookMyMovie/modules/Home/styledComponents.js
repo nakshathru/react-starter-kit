@@ -1,8 +1,14 @@
 import { makeStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
-const useStyles = makeStyles((theme) => ({
+export const MovieListWrapper = styled.div`
+margin-top: 50px;
+width: 100%
+`;
+
+export const useStyles = makeStyles((theme) => ({
   paper: {
-    padding: theme.spacing(2),
+    margin: theme.spacing(0),
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
@@ -11,5 +17,3 @@ const useStyles = makeStyles((theme) => ({
     height: 240,
   },
 }));
-
-export default useStyles;
